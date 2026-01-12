@@ -78,4 +78,7 @@ python robolab/scripts/mujoco/sim2sim_atom01.py --load_model "{exported/policy.p
 ## References and Thanks
 This project repository builds upon the shoulders of giants.
 * [IsaacLab](https://github.com/isaac-sim/IsaacLab)
+* [rsl_rl](https://github.com/leggedrobotics/rsl_rl)
 * [legged_gym](https://github.com/leggedrobotics/legged_gym)
+* [legged_lab](https://github.com/zitongbai/legged_lab)
+* [robot_lab](https://github.com/fan-ziqi/robot_lab)
