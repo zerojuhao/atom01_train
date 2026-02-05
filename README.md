@@ -74,10 +74,10 @@ python robolab/scripts/rsl_rl/play.py --task=<ENV_NAME> --num_envs=1
 python robolab/scripts/mujoco/sim2sim_atom01.py --load_model "{exported/policy.pt model full path here}"
 ```
 
-### Dataset Preparation
+### Prepare Motion Data
 To obtain dataset for AMP and BeyondMimic, please visit [GMR](https://github.com/Roboparty/GMR).
 
-
+The joint order in the dataset obtained via GMR corresponds to the order in Robot URDF and XML, which differs from the one used in Isaac Lab. Therefore, we need to prepare a `.yaml` file which contains joint mapping information like the one showed in `scripts/tools/retarget/config/atom01.yaml`, and then reorder the joint sequence using `scripts/tools/retarget/dataset_retarget.py` before training.
 
 ## References and Thanks
 This project repository builds upon the shoulders of giants.
