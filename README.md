@@ -74,6 +74,10 @@ python robolab/scripts/rsl_rl/play.py --task=<ENV_NAME> --num_envs=1
 python robolab/scripts/mujoco/sim2sim_atom01.py --load_model "{exported/policy.pt model full path here}"
 ```
 
+### Dataset Preparation
+To obtain dataset for AMP and BeyondMimic, please visit [GMR](https://github.com/Roboparty/GMR).
+
+
 
 ## References and Thanks
 This project repository builds upon the shoulders of giants.
