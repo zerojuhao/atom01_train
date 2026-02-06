@@ -74,6 +74,12 @@ python robolab/scripts/rsl_rl/play.py --task=<ENV_NAME> --num_envs=1
 python robolab/scripts/mujoco/sim2sim_atom01.py --load_model "{exported/policy.pt model full path here}"
 ```
 
+### 数据集准备
+对于 AMP 和 BeyondMimic 获取数据集的工作流程, 请查看 [GMR](https://github.com/Roboparty/GMR).
+
+通过GMR获得的数据集中的关节顺序与机器人的 URDF 和 XML 中的顺序一致，但这与 Isaac Lab 所使用的顺序不同。因此，我们需要准备一个包含关节映射信息的`.yaml`文件（如`scripts/tools/retarget/config/atom01.yaml`所示），并在训练前使用`scripts/tools/retarget/dataset_retarget.py`重新排序关节序列。
+
+
 ## 参考和致谢
 本项目仓库建立在巨人的肩膀上。
 * [IsaacLab](https://github.com/isaac-sim/IsaacLab)
